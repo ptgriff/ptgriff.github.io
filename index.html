@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick T. Griffin — Postdoctoral Fellow, Broad Institute</title>
+    <meta name="description" content="Patrick T. Griffin, Postdoctoral Fellow in the Buenrostro Lab at the Broad Institute of MIT and Harvard. Research in adrenal biology, epigenomics, and single-cell technologies.">
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --text-secondary: #555;
+            --accent: #2a5a8a;
+            --accent-light: #3a7ab8;
+            --bg: #fafafa;
+            --card: #ffffff;
+            --border: #e0e0e0;
+            --tag-bg: #eef3f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            padding: 60px 0 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        .contact-links {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-links a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .contact-links a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .headshot {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            float: right;
+            margin: 0 0 16px 24px;
+        }
+
+        .speaking-img {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 8px;
+            margin: 16px 0 8px;
+            display: block;
+        }
+
+        .img-caption {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 0.78rem;
+            color: #999;
+            margin-bottom: 14px;
+        }
+
+        .contact-links .sep {
+            margin: 0 10px;
+            color: #ccc;
+        }
+
+        section {
+            padding: 36px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin-bottom: 18px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        .research-area {
+            margin-bottom: 22px;
+        }
+
+        .research-area h3 {
+            font-size: 1.02rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .research-area p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .keywords span {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 0.78rem;
+            background: var(--tag-bg);
+            color: var(--accent);
+            padding: 2px 10px;
+            border-radius: 3px;
+        }
+
+        .pub-list {
+            list-style: none;
+            counter-reset: pub;
+        }
+
+        .pub-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 18px;
+            font-size: 0.93rem;
+            line-height: 1.6;
+        }
+
+        .pub-list li::before {
+            counter-increment: pub;
+            content: counter(pub) ".";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .pub-list .authors {
+            color: var(--text-secondary);
+        }
+
+        .pub-list .authors strong {
+            color: var(--text);
+        }
+
+        .pub-list .title {
+            font-style: italic;
+        }
+
+        .pub-list .journal {
+            font-weight: 600;
+        }
+
+        .pub-list a {
+            color: var(--accent);
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 0.82rem;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .pub-list a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        footer {
+            padding: 30px 0 50px;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 40px 0 30px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            .container {
+                padding: 0 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <img src="headshot.jpg" alt="Patrick T. Griffin" class="headshot">
+            <h1>Patrick T. Griffin</h1>
+            <div class="subtitle">Postdoctoral Fellow &middot; Buenrostro Lab &middot; Broad Institute of MIT and Harvard</div>
+            <div class="contact-links">
+                <a href="mailto:griffinp@broadinstitute.org">griffinp@broadinstitute.org</a>
+                <span class="sep">|</span>
+                <a href="https://scholar.google.com/citations?user=dd2uZ44AAAAJ&hl=en" target="_blank">Google Scholar</a>
+                <span class="sep">|</span>
+                <a href="https://github.com/ptgriff" target="_blank">GitHub</a>
+                <span class="sep">|</span>
+                <a href="https://x.com/patrick_griffN" target="_blank">X / Twitter</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I am a postdoctoral fellow in <a href="https://buenrostrolab.com" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">Jason Buenrostro's lab</a> at the Broad Institute of MIT and Harvard and the Harvard Department of Stem Cell and Regenerative Biology. My research bridges endocrinology and genomics technology &mdash; I study how chronic psychosocial stress remodels endocrine tissues using single-cell multiomics, and I develop new platforms for single-cell epigenomic profiling. A central theme across my work is understanding how stress and our environment shape how we age.
+            </p>
+            <p>
+                I completed my Ph.D. with David Sinclair in the Department of Genetics at Harvard Medical School, where I invented TIME-seq &mdash; a high-throughput method for epigenetic age profiling (<a href="https://www.nature.com/articles/s43587-023-00555-2" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">Griffin et al., <i>Nature Aging</i> 2024</a>) &mdash; and built the first multiomic aging clocks in mice (<a href="https://academic.oup.com/biomedgerontology/article/80/11/glaf188/8242767" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">Vera*, Griffin* et al., <i>J Gerontol A</i> 2025</a>), contributing to work showing that loss of epigenetic information drives mammalian aging (<a href="https://www.cell.com/cell/fulltext/S0092-8674(22)01570-7" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">Yang, Hayano, Griffin et al., <i>Cell</i> 2023</a>).
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research</h2>
+
+            <div class="research-area">
+                <h3>Adrenal Biology &amp; Stress Physiology</h3>
+                <p>
+                    I use single-cell multiomics to map how the adrenal cortex responds to chronic social isolation stress. This work connects HPA axis physiology to the molecular programs of individual cortical zones, with the goal of understanding how psychosocial environments become embedded in endocrine tissue.
+                </p>
+                <div class="keywords">
+                    <span>adrenal cortex</span>
+                    <span>HPA axis</span>
+                    <span>social isolation</span>
+                    <span>single-cell multiomics</span>
+                </div>
+            </div>
+
+            <div class="research-area">
+                <h3>Genomics Technology Development</h3>
+                <p>
+                    I develop platforms for profiling DNA methylation and other epigenetic modifications at single-cell resolution. These methods aim to make single-cell epigenomic profiling more accessible and scalable, enabling questions that current platforms cannot easily address.
+                </p>
+                <div class="keywords">
+                    <span>DNA methylation</span>
+                    <span>single-cell epigenomics</span>
+                    <span>technology development</span>
+                </div>
+            </div>
+        </section>
+
+            <div style="text-align:center;padding:24px 0;">
+                <img src="speaking.jpg" alt="Patrick Griffin presenting at the Broad Institute" class="speaking-img" style="margin:0 auto;">
+                <div class="img-caption" style="text-align:center;">Presenting at the Broad Trauma Initiative, 2025</div>
+            </div>
+
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            <ol class="pub-list">
+                <li>
+                    <span class="authors">Vera DL*, <strong>Griffin PT*</strong>, Leigh D, ..., Kane AE, Sinclair DA.</span>
+                    <span class="title">Multiomic clocks to predict phenotypic age in mice.</span>
+                    <span class="journal">J Gerontol A Biol Sci Med Sci</span> (2025). *co-first author
+                    <a href="https://academic.oup.com/biomedgerontology/article/80/11/glaf188/8242767" target="_blank">doi</a>
+                </li>
+                <li>
+                    <span class="authors">Zhu D, Wu JZ, <strong>Griffin PT</strong>, Samuelson BA, Sinclair DA, Kane AE.</span>
+                    <span class="title">Metabolomics biomarkers of frailty: a longitudinal study of aging female and male mice.</span>
+                    <span class="journal">NPJ Aging</span> (2025).
+                    <a href="https://doi.org/10.1038/s41514-025-00237-w" target="_blank">doi</a>
+                </li>
+                <li>
+                    <span class="authors"><strong>Griffin PT</strong>, Kane AE, Trapp A, ..., Gladyshev VN, Sinclair DA.</span>
+                    <span class="title">TIME-seq reduces time and cost of DNA methylation measurement for epigenetic clock construction.</span>
+                    <span class="journal">Nature Aging</span> (2024).
+                    <a href="https://www.nature.com/articles/s43587-023-00555-2" target="_blank">doi</a>
+                </li>
+                <li>
+                    <span class="authors">Yang JH, Hayano M, <strong>Griffin PT</strong>, ..., Sinclair DA.</span>
+                    <span class="title">Loss of epigenetic information as a cause of mammalian aging.</span>
+                    <span class="journal">Cell</span> (2023).
+                    <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)01570-7" target="_blank">doi</a>
+                </li>
+                <li>
+                    <span class="authors">Yang JH, Petty CA, Dixon-McDougall T, ..., <strong>Griffin PT</strong>, ..., Gladyshev VN, Sinclair DA.</span>
+                    <span class="title">Chemically induced reprogramming to reverse cellular aging.</span>
+                    <span class="journal">Aging</span> (2023).
+                    <a href="https://doi.org/10.18632/aging.204896" target="_blank">doi</a>
+                </li>
+                <li>
+                    <span class="authors">Finnegan EJ, Ford B, Wallace X, Pettolino F, <strong>Griffin PT</strong>, Schmitz RJ, ..., Trevaskis B.</span>
+                    <span class="title">Zebularine treatment is associated with deletion of FT-B1 leading to an increase in spikelet number in bread wheat.</span>
+                    <span class="journal">Plant Cell Environ</span> (2018).
+                    <a href="https://doi.org/10.1111/pce.13146" target="_blank">doi</a>
+                </li>
+                <li>
+                    <span class="authors">Bewick AJ, Niederhuth CE, Ji L, Rohr NA, <strong>Griffin PT</strong>, Leebens-Mack J, Schmitz RJ.</span>
+                    <span class="title">The evolution of CHROMOMETHYLASES and gene body DNA methylation in plants.</span>
+                    <span class="journal">Genome Biol</span> (2017).
+                    <a href="https://doi.org/10.1186/s13059-017-1195-1" target="_blank">doi</a>
+                </li>
+                <li>
+                    <span class="authors"><strong>Griffin PT</strong>, Niederhuth CE, Schmitz RJ.</span>
+                    <span class="title">A Comparative Analysis of 5-Azacytidine- and Zebularine-Induced DNA Demethylation.</span>
+                    <span class="journal">G3: Genes, Genomes, Genetics</span> (2016).
+                    <a href="https://doi.org/10.1534/g3.116.030262" target="_blank">doi</a>
+                </li>
+            </ol>
+            <p style="font-size:0.88rem;color:var(--text-secondary);margin-top:8px;">
+                Full list on <a href="https://pubmed.ncbi.nlm.nih.gov/?term=griffin+pt+%5Bauthor%5D&sort=date" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">PubMed</a>.
+            </p>
+        </section>
+
+        <footer>
+            &copy; 2026 Patrick T. Griffin
+        </footer>
+
+    </div>
+</body>
+</html>
